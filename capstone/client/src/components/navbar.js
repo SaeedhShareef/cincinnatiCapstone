@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import {UncontrolledDropdown,DropdownToggle,DropdownMenu, DropdownItem,} from 'reactstrap'
-import { Nav } from 'react-bootstrap'
+import { Nav } from 'react-bootstrap';
+import {BACKEND_URL} from '../config';
 import axios from 'axios';
 export default class Navbar extends Component {
     state = { 
@@ -12,7 +13,7 @@ export default class Navbar extends Component {
       this.getLocationPost();
     }
     getLocationPost() {
-        axios.get('http://localhost:5000/all-locations')
+        axios.get(BACKEND_URL + 'all-locations')
        .then((res) => {
          const data = res.data;
           console.log(res.data)    

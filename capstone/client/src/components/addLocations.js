@@ -44,7 +44,7 @@ export default class addLocations extends Component {
                   this.getLocationsPost();
                 };
                 getLocationsPost() {
-                    axios.get('http://localhost:5000/all-locations')
+                    axios.get(BACKEND_URL + 'all-locations')
                    .then((res) => {
                      const data = res.data;
                       console.log(res.data)
@@ -146,7 +146,7 @@ export default class addLocations extends Component {
                   familyFriendly: this.state.familyFriendly
                 }
                 console.log(newLocation)
-                axios.post('http://localhost:5000/all-locations/add', newLocation)
+                axios.post(BACKEND_URL + '/all-locations/add', newLocation)
                 .then((res) => {console.log(res.data)})
                   window.location = '/allLocations'
               }
