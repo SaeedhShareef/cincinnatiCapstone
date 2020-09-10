@@ -4,11 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "react-scripts start",
+    "start": "serve -s build",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "heroku-postbuild": "npm run build",
+//these are new up there^
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "cd client && npm run build",
+    // "build": "cd client && npm run build",
     "install-client": "cd client && npm install",
-    "heroku-postbuild": "cd client && npm install && npm run build",
-    "start": "node app.js",
+    // "heroku-postbuild": "cd client && npm install && npm run build",
+    // "start": "node app.js",
     "client": "cd client && npm start",
     "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon app.js\" \"npm run client\""
   },
@@ -29,6 +36,7 @@
     "mongoose": "^5.10.4",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.4",
-    "requirejs": "^2.3.6"
+    "requirejs": "^2.3.6",
+    "serve": "^11.3.2"
   }
 }
