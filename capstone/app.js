@@ -36,9 +36,18 @@ app.use('/all-locations', locationsRouter);
 //this chunk of code gets from the database
 
 
-
 app.use('/all-locations', TouristDestination);
 app.use('/contacts', Contact);
 
+app.get('*', function (req, res) {
+  res.sendFile(__dirname + '/client/build/index.html', function (err) {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
 
+app.listen (port, () => {
+    console.log(`server is running on port: ${port}`)
+})
 
