@@ -1,6 +1,9 @@
 {
   "name": "backend",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.18.3"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -10,7 +13,7 @@
     "heroku-postbuild": "cd client && npm install && npm run build",
     "start": "node app.js",
     "client": "cd client && npm start",
-    "dev": "concurrently -n 'server,client' -c 'red,green'  \"nodemon app.js\" \"npm run client\""
+    "dev": "concurrently -n 'app,client' -c 'red,green'  \"nodemon app.js\" \"npm run client\""
   },
   "keywords": [],
   "author": "",
