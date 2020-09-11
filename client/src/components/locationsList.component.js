@@ -30,7 +30,7 @@ getLocationPost() {
      console.log('data dun did got');
   })
     .catch((err) => {
-      alert('error ABANDON SHIP!!!')
+      console.log('error ABANDON SHIP!!!')
     });
   }
   displayLocationPosts = (locations) => {

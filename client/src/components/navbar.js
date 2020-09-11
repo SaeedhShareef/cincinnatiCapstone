@@ -21,7 +21,7 @@ export default class Navbar extends Component {
          console.log('data dun did got' + data);
       })
         .catch((err) => {
-          alert('error ABANDON SHIP!!!')
+          console.log('error ABANDON SHIP!!!')
         });
       }
     searchbar(locations) {
