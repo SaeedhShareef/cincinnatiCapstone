@@ -974,3 +974,39 @@ margin-left: 20px;
   padding-top: 3%;
 }
 
+.infoBlock {
+  background-color: hsl(45, 100%, 51%);
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto auto;
+  width: 90%;
+  height: 90%;
+  overflow-y: auto;
+  box-shadow: 2px 2px 10px rgb(138, 134, 134);
+  }
+  .infoBlock2 {
+  background-color: hsl(199, 85%, 63%);
+  padding: 20px;
+  border-radius: 10px;
+  margin: auto auto;
+  width: 90%;
+  height: 90%;
+  overflow-y: auto;
+  box-shadow: 2px 2px 10px rgb(138, 134, 134);
+  }
+  .jumbooo{
+  color: white;
+  }
+  .cool{
+  background: hsl(220, 42%, 74%);
+  }
+  .tiger{
+  background: hsl(264, 17%, 68%);
+  box-shadow: 2px 2px 10px rgb(138, 134, 134);
+  }
+  .panda{
+  background: hsl(220, 42%, 74%);
+  box-shadow: 2px 2px 10px rgb(138, 134, 134);
+  }
+
+  
