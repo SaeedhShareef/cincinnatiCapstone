@@ -19,20 +19,23 @@ class LocationsList extends Component {
     imageUrl: ' ',
     locations: [] 
   };
-componentDidMount(){
-  this.getLocationPost();
-}
-getLocationPost() {
-    axios.get(BACKEND_URL + 'all-locations')
-   .then((res) => {
-     const data = res.data;
-      console.log(res.data)
-     this.setState({locations: data})
-     console.log('data dun did got');
-  })
-    .catch((err) => {
-      console.log('error ABANDON SHIP!!!')
-    });
+  componentDidMount() {
+    this.getLocationPost();
+  }
+  getLocationPost() {
+    axios
+      .get(BACKEND_URL + 'all-locations')
+      .then((res) => {
+        const data = res.data;
+        console.log(res.data);
+        this.setState({ locations: data });
+        console.log('data dun did got');
+      })
+      .catch((err) => {
+        console.log('err>>', err);
+        // alert('error ABANDON SHIP!!!')
+      });
+
   }
   displayLocationPosts = (locations) => {
     if (!locations.length) return null;
