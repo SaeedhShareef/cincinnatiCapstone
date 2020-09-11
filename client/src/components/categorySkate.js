@@ -26,8 +26,8 @@ export default class Skate extends Component {
                 <div style={{ padding:'6rem', margin: '0 auto', maxWidth: 1000, marginLeft: 380 }}>
             <h2 className='underline'>Looking for some thrills?</h2>
                 </div>
-        <div style={{ marginTop: 15, maxWidth: '100%', marginBottom: 80 }}>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam autem animi eos veritatis nam possimus, atque porro. Aperiam, iusto laborum possimus obcaecati, corporis quae dolore sit molestias nobis corrupti aspernatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quo at voluptates dolorum fugit suscipit libero earum. Distinctio nihil voluptas molestias ipsam aliquid. Repellat, iure voluptatibus hic odio sunt soluta.</p>
+        <div style={{ padding: '1rem', margin: '0 auto', maxWidth: 1000, marginBottom: 50, marginTop: 50}}>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam autem animi eos veritatis nam possimus, atque porro. Aperiam, iusto laborum possimus obcaecati, corporis quae dolore sit molestias nobis corrupti aspernatur. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia quo at voluptates dolorum fugit suscipit libero earum. Distinctio nihil voluptas molestias ipsam aliquid. Repellat, iure voluptatibus hic odio sunt soluta.</p>
         </div>
         <div style={{ padding: '1rem', margin:'0 auto', maxWidth: 1000, marginBottom:100 }}>
         <iframe width="960" height="560" src="https://www.youtube.com/embed/yPVYo8iZfmA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
