@@ -19,7 +19,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "concurrently": "^5.3.git 0"
+    "concurrently": "^0.1.1"
   },
   "dependencies": {
     "axios": "^0.20.0",
