@@ -14,12 +14,12 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 
 const cors = require('cors'); 
 app.use(cors()); 
-const dbURI =
-  "mongodb+srv://capstone:12345@cluster0.gdfnt.mongodb.net/Capstone?retryWrites=true&w=majority";
-mongoose
-  .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-  .then((result) => app.listen(5000))
-  .catch((err) => console.log(err));
+// const dbURI =
+//   "mongodb+srv://capstone:12345@cluster0.gdfnt.mongodb.net/Capstone?retryWrites=true&w=majority";
+// mongoose
+//   .connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
+//   .then((result) => app.listen(5000))
+//   .catch((err) => console.log(err));
 
 
 const connection = mongoose.connection;
@@ -28,7 +28,7 @@ connection.once('open', () => {
 })
 
 const contactsRouter = require('./routes/contacts');
-const locationsRouter = require('./routes/addlocations');
+const locationsRouter = require('./routes/addLocations');
 
 app.use('/contacts', contactsRouter);
 app.use('/all-locations', locationsRouter);

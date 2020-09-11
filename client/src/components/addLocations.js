@@ -146,7 +146,7 @@ export default class addLocations extends Component {
                   familyFriendly: this.state.familyFriendly
                 }
                 console.log(newLocation)
-                axios.post(BACKEND_URL + '/all-locations/add', newLocation)
+                axios.post(BACKEND_URL + 'all-locations/add', newLocation)
                 .then((res) => {console.log(res.data)})
                   window.location = '/allLocations'
               }
