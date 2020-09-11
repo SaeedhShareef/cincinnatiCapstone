@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import axios from 'axios';
 import { BACKEND_URL } from '../config';
+
 class LocationsList extends Component {
   state = { 
     name: ' ',
@@ -17,7 +18,7 @@ class LocationsList extends Component {
     description: ' ',
     imageUrl: ' ',
     locations: [] 
-  }
+  };
 componentDidMount(){
   this.getLocationPost();
 }
@@ -30,7 +31,7 @@ getLocationPost() {
      console.log('data dun did got');
   })
     .catch((err) => {
-      alert('error ABANDON SHIP!!!')
+      console.log('error ABANDON SHIP!!!')
     });
   }
   displayLocationPosts = (locations) => {
