@@ -35,6 +35,16 @@ connection.once('open', () => {
 const addLocationsRouter = require('./models/addLocations.models');
 const contactsRouter = require('./models/contacts.models');
 
+
+app.get('*', function (req, res) {
+    res.sendFile(__dirname + '/client/build/index.html', function (err) {
+      if (err) {
+        res.status(500).send(err);
+      }
+    });
+  });
+  
+
 app.use('/addLocations', addLocationsRouter);
 app.use('/contacts', contactsRouter);
 app.listen(port, () => {
