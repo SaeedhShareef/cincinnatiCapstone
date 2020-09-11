@@ -59,7 +59,7 @@ export default class Art extends Component {
                                 <br></br>
                        <a href="https://www.contemporaryartscenter.org/">  <img src={require('../assets/CAC4.jpg')} alt="CAC" className="artPageExamples"/></a>
                           <br></br>
-                    <h2 className="fillerText artHeaders">The cincinnati Art musuem</h2>
+                    <h2 className="fillerText artHeaders">The Cincinnati Art Musuem</h2>
                             <br></br> <a href="https://www.cincinnatiartmuseum.org/">  <img src={require('../assets/CAM.jpg')} alt="CAM" className="artPageExamples"/></a> 
                             <br></br>
                     <h2 className="fillerText artHeaders">Union Terminal</h2>
