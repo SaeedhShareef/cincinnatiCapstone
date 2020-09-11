@@ -1,4 +1,3 @@
-// Footer is COMPLETE -DJ
 import React, { Component } from 'react'
 
 export default class Footer extends Component {

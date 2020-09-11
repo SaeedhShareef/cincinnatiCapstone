@@ -13,12 +13,9 @@ const addLocationsSchema = new Schema({
   description: {type: String, required: true},
   website: { type: String, required: true },
   imageUrl:{type: String, required: true},
-  //somehow make location an object
   location: {type: objectSchema, required: true},
     indoors:{type: Boolean, required: true },    
-    familyFriendly:{type: Boolean, required: true }
-
-    //possibly add category here
+    familyFriendly:{type: Boolean, required:true }
   }); 
  
  const TouristDestination = mongoose.model(
